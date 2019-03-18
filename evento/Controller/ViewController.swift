@@ -2,7 +2,6 @@
 //  ViewController.swift
 //  evento
 //
-//  Created by Elitia Candy on 14/03/2019.
 //  Copyright © 2019 EventoTeam. All rights reserved.
 //
 

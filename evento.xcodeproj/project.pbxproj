@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C6615412241429B00DEC29C /* EventsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6615402241429B00DEC29C /* EventsVC.swift */; };
+		4C661543224142C700DEC29C /* ClientsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C661542224142C700DEC29C /* ClientsVC.swift */; };
+		4C6615452241432000DEC29C /* MembersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6615442241432000DEC29C /* MembersVC.swift */; };
 		4CD50CF6223B087C0011ABBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD50CF5223B087C0011ABBE /* AppDelegate.swift */; };
 		4CD50CF8223B087C0011ABBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD50CF7223B087C0011ABBE /* ViewController.swift */; };
 		4CD50CFB223B087C0011ABBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD50CF9223B087C0011ABBE /* Main.storyboard */; };
@@ -15,6 +18,7 @@
 		4CD50D03223B087D0011ABBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD50D01223B087D0011ABBE /* LaunchScreen.storyboard */; };
 		4CD50D0E223B087D0011ABBE /* eventoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD50D0D223B087D0011ABBE /* eventoTests.swift */; };
 		4CD50D19223B087D0011ABBE /* eventoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD50D18223B087D0011ABBE /* eventoUITests.swift */; };
+		4CD9C62A2240164300628053 /* DashbaordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD9C6292240164300628053 /* DashbaordVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C6615402241429B00DEC29C /* EventsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsVC.swift; sourceTree = "<group>"; };
+		4C661542224142C700DEC29C /* ClientsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientsVC.swift; sourceTree = "<group>"; };
+		4C6615442241432000DEC29C /* MembersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembersVC.swift; sourceTree = "<group>"; };
 		4CD50CF2223B087C0011ABBE /* evento.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = evento.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD50CF5223B087C0011ABBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CD50CF7223B087C0011ABBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +56,7 @@
 		4CD50D14223B087D0011ABBE /* eventoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eventoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD50D18223B087D0011ABBE /* eventoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventoUITests.swift; sourceTree = "<group>"; };
 		4CD50D1A223B087D0011ABBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CD9C6292240164300628053 /* DashbaordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashbaordVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,10 @@
 			children = (
 				4CD50CF7223B087C0011ABBE /* ViewController.swift */,
 				4CD50CF5223B087C0011ABBE /* AppDelegate.swift */,
+				4CD9C6292240164300628053 /* DashbaordVC.swift */,
+				4C6615402241429B00DEC29C /* EventsVC.swift */,
+				4C661542224142C700DEC29C /* ClientsVC.swift */,
+				4C6615442241432000DEC29C /* MembersVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -291,9 +303,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CD9C62A2240164300628053 /* DashbaordVC.swift in Sources */,
+				4C661543224142C700DEC29C /* ClientsVC.swift in Sources */,
+				4C6615412241429B00DEC29C /* EventsVC.swift in Sources */,
 				4CD50CF8223B087C0011ABBE /* ViewController.swift in Sources */,
 				4CD50CF6223B087C0011ABBE /* AppDelegate.swift in Sources */,
 				4CD50CFE223B087C0011ABBE /* evento.xcdatamodeld in Sources */,
+				4C6615452241432000DEC29C /* MembersVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

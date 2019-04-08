@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  evento_iOSApp
 //
-//  Created by Elitia Candy on 01/04/2019.
-//  Copyright © 2019 Elitia. All rights reserved.
+//  Created by Elitia Candy on 08/04/2019.
+//  Copyright © 2019 EventoTeam. All rights reserved.
 //
 
 import UIKit

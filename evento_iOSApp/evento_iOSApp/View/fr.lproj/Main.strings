@@ -1,0 +1,12 @@
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "4v7-rb-xJW"; */
+"4v7-rb-xJW.placeholder" = "Mot de passe";
+
+/* Class = "UITextField"; placeholder = "Username"; ObjectID = "akR-s6-CxN"; */
+"akR-s6-CxN.placeholder" = "Nom d'utilisateur";
+
+/* Class = "UILabel"; text = "Mot de passe oublié ?"; ObjectID = "jOc-yJ-ODs"; */
+"jOc-yJ-ODs.text" = "Mot de passe oublié ?";
+
+/* Class = "UIButton"; normalTitle = "Se connecter"; ObjectID = "y4n-Xd-pIW"; */
+"y4n-Xd-pIW.normalTitle" = "Se connecter";

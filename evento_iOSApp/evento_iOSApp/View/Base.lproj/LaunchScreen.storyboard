@@ -17,13 +17,37 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="people" translatesAutoresizingMaskIntoConstraints="NO" id="fb2-6t-idx">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="gma-eN-XkQ">
+                                <rect key="frame" x="157" y="94" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="H59-V6-UZ2"/>
+                                    <constraint firstAttribute="width" constant="100" id="MQ0-CE-upM"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fb2-6t-idx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5ev-2y-tSP"/>
+                            <constraint firstItem="fb2-6t-idx" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Bds-ja-KUZ"/>
+                            <constraint firstItem="gma-eN-XkQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="74" id="adr-eN-sqH"/>
+                            <constraint firstItem="gma-eN-XkQ" firstAttribute="centerX" secondItem="fb2-6t-idx" secondAttribute="centerX" id="fEY-mL-Xn9"/>
+                            <constraint firstItem="fb2-6t-idx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fop-SY-GUf"/>
+                            <constraint firstItem="fb2-6t-idx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kla-z3-tAZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="374.18478260869568"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="1593" height="1572"/>
+        <image name="people" width="4459" height="2646"/>
+    </resources>
 </document>

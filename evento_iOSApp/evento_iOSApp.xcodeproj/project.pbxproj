@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4C199A6A225DE7D500E8D5D0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C199A6C225DE7D500E8D5D0 /* Localizable.strings */; };
-		4C199A6F225DED0E00E8D5D0 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 4C199A6E225DED0E00E8D5D0 /* .gitignore */; };
 		4C8E93E7225B532100499C87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8E93E6225B532100499C87 /* AppDelegate.swift */; };
 		4C8E93E9225B532100499C87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8E93E8225B532100499C87 /* ViewController.swift */; };
 		4C8E93EC225B532100499C87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8E93EA225B532100499C87 /* Main.storyboard */; };
@@ -39,7 +38,6 @@
 /* Begin PBXFileReference section */
 		4C199A6B225DE7D500E8D5D0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4C199A6D225DE7DD00E8D5D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		4C199A6E225DED0E00E8D5D0 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		4C8E93E3225B532100499C87 /* evento_iOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = evento_iOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C8E93E6225B532100499C87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C8E93E8225B532100499C87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -140,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				4C199A6C225DE7D500E8D5D0 /* Localizable.strings */,
-				4C199A6E225DED0E00E8D5D0 /* .gitignore */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
@@ -276,7 +273,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C199A6F225DED0E00E8D5D0 /* .gitignore in Resources */,
 				4C8E93F4225B532200499C87 /* LaunchScreen.storyboard in Resources */,
 				4C199A6A225DE7D500E8D5D0 /* Localizable.strings in Resources */,
 				4C8E93F1225B532200499C87 /* Assets.xcassets in Resources */,

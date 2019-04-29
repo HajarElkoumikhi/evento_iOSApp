@@ -21,6 +21,10 @@ class DataService {
     weak var delegate: DataServiceDelegate?
     var usersArray = [User]()
     
+    
+    
+    
+    
     //Get all food trucks
     func getAllUsers(){
         let sessionConfig = URLSessionConfiguration.default
@@ -53,34 +57,8 @@ class DataService {
         session.finishTasksAndInvalidate()
         
     }
-        
-        
+    
 
-    
-    
-    //POST add a new foodtruck
-//    func addNewFoodTruck(_ name:String, foodtype:String, avgCost: Double, latitude:Double, longitude:Double, completion:@escaping callbacks){
-//        //Construct our JSON
-//
-//        let json: [String:Any] = [
-//            "name": name,
-//            "foodtype": foodtype,
-//            "avgcost": avgCost,
-//            "geometry":[
-//                "coordinates" :[
-//                    "lat": latitude,
-//                    "long": longitude
-//
-//                ]
-//            ]
-//        ]
-//
-//        //        do {
-//        //            //Serialize JSON
-//        //            let jsonData = try JSONSerialization.data(withJSONObject: JSONSerialization, options: .prettyPrinted )
-//        //        }catch let
-//
-//    }
 
 
 }

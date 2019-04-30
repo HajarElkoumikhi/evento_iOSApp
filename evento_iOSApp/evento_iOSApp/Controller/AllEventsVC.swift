@@ -1,5 +1,5 @@
 //
-//  AllUsersVC.swift
+//  AllEventsVC.swift
 //  evento_iOSApp
 //
 //  Created by Elitia Candy on 29/04/2019.
@@ -9,12 +9,12 @@
 import Foundation
 import UIKit
 
-class AllUsersVC: UIViewController {
+class AllEventsVC: UIViewController {
     
     
     @IBOutlet weak var tableView: UITableView!
     
-    var userService = UserService.instance
+    var eventService = EventService.instance
     var authService = AuthService.instance
     
     
@@ -23,18 +23,19 @@ class AllUsersVC: UIViewController {
         super.viewDidLoad()
         
         
-        userService.delegate = self
-        tableView?.delegate = self 
+        eventService.delegate = self
+        tableView?.delegate = self
         tableView?.dataSource = self
-        UserService.instance.getAllUsers()
+        EventService.instance.getAllEvents()
     }
     
     
 }
 
 
-extension AllUsersVC: UserServiceDelegate {
-    func usersLoaded() {
+extension AllEventsVC: EventServiceDelegate {
+    
+    func eventsLoaded() {
         OperationQueue.main.addOperation {
             self.tableView?.reloadData()
         }
@@ -43,15 +44,15 @@ extension AllUsersVC: UserServiceDelegate {
 }
 
 
-extension AllUsersVC: UITableViewDelegate,UITableViewDataSource {
+extension AllEventsVC: UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return userService.usersArray.count
+        return eventService.eventsArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "userCell", for: indexPath) as? UserCell {
-            cell.configureCell(user: userService.usersArray[indexPath.row])
-            print(userService.usersArray[indexPath.row])
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "eventCell", for: indexPath) as? EventCell {
+            cell.configureCell(event: eventService.eventsArray[indexPath.row])
+            print(eventService.eventsArray[indexPath.row])
             
             return cell
         }
@@ -71,5 +72,3 @@ extension AllUsersVC: UITableViewDelegate,UITableViewDataSource {
     
     
 }
-
-

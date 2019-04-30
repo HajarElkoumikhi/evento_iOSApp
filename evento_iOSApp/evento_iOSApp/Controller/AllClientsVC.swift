@@ -1,5 +1,5 @@
 //
-//  AllUsersVC.swift
+//  AllClientsVC.swift
 //  evento_iOSApp
 //
 //  Created by Elitia Candy on 29/04/2019.
@@ -9,12 +9,11 @@
 import Foundation
 import UIKit
 
-class AllUsersVC: UIViewController {
-    
+class AllClientsVC: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var userService = UserService.instance
+    var clientService = ClientService.instance
     var authService = AuthService.instance
     
     
@@ -23,18 +22,19 @@ class AllUsersVC: UIViewController {
         super.viewDidLoad()
         
         
-        userService.delegate = self
-        tableView?.delegate = self 
+        clientService.delegate = self
+        tableView?.delegate = self
         tableView?.dataSource = self
-        UserService.instance.getAllUsers()
+        ClientService.instance.getAllClients()
     }
     
     
 }
 
 
-extension AllUsersVC: UserServiceDelegate {
-    func usersLoaded() {
+extension AllClientsVC: ClientServiceDelegate{
+    
+    func clientsLoaded() {
         OperationQueue.main.addOperation {
             self.tableView?.reloadData()
         }
@@ -43,15 +43,16 @@ extension AllUsersVC: UserServiceDelegate {
 }
 
 
-extension AllUsersVC: UITableViewDelegate,UITableViewDataSource {
+extension AllClientsVC: UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return userService.usersArray.count
+        return clientService.clientsArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "userCell", for: indexPath) as? UserCell {
-            cell.configureCell(user: userService.usersArray[indexPath.row])
-            print(userService.usersArray[indexPath.row])
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "clientCell", for: indexPath) as? ClientCell {
+            cell.configureCell(client: clientService.clientsArray[indexPath.row])
+            print(clientService.clientsArray[indexPath.row])
+            
             
             return cell
         }
@@ -71,5 +72,3 @@ extension AllUsersVC: UITableViewDelegate,UITableViewDataSource {
     
     
 }
-
-

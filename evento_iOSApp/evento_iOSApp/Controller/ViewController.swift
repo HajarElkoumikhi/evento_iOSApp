@@ -21,9 +21,7 @@ class ViewController: UIViewController {
         open.target = self.revealViewController()
         open.action = #selector(SWRevealViewController.revealToggle(_:))
         
-//        open.target(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
-        
-        self.revealViewController().revealToggle(self)
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
     
     override func didReceiveMemoryWarning() {

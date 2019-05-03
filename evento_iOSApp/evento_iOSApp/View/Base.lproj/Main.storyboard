@@ -123,7 +123,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="210" y="-240"/>
+            <point key="canvasLocation" x="-578" y="-708"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="KP9-UM-4H8">
@@ -184,7 +184,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="people" translatesAutoresizingMaskIntoConstraints="NO" id="GdM-6G-3ub">
-                                <rect key="frame" x="0.0" y="20" width="414" height="197"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="153"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="end-5l-y8L">
                                 <rect key="frame" x="20" y="239" width="374" height="128"/>
@@ -244,12 +244,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dUi-yw-XvB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="imy-Au-BbQ">
-                        <barButtonItem key="leftBarButtonItem" title="Open" id="4Zg-Y4-Iyc"/>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="open" destination="4Zg-Y4-Iyc" id="Xlc-7i-gNe"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="imy-Au-BbQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KsT-Jn-JXN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -618,7 +613,7 @@
         <image name="persona2" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bsZ-ph-xhY"/>
-        <segue reference="q23-pX-ce4"/>
+        <segue reference="r7R-B1-Bih"/>
+        <segue reference="peV-8X-EJp"/>
     </inferredMetricsTieBreakers>
 </document>

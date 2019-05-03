@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ly2-MO-Qsy">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -213,41 +213,44 @@
                         <viewLayoutGuide key="safeArea" id="W1V-jQ-ydF"/>
                     </view>
                     <connections>
-                        <segue destination="thF-lh-t1X" kind="custom" customClass="SWRevealViewControllerSegueSetController" id="b0t-y6-zvx"/>
-                        <segue destination="MXu-dL-xK1" kind="custom" customClass="SWRevealViewControllerSegueSetController" id="gmV-Uh-J2d"/>
+                        <segue destination="thF-lh-t1X" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="b0t-y6-zvx"/>
+                        <segue destination="MXu-dL-xK1" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="gmV-Uh-J2d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wMx-5D-SRf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2888" y="-708"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Back MenuVC-->
         <scene sceneID="Jym-XA-qNk">
             <objects>
-                <tableViewController id="thF-lh-t1X" sceneMemberID="viewController">
+                <tableViewController id="thF-lh-t1X" customClass="BackMenuVC" customModule="evento_iOSApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="IN6-IC-nIB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="hKZ-MR-CNb">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="menuCell" rowHeight="178" id="hKZ-MR-CNb">
+                                <rect key="frame" x="0.0" y="28" width="414" height="178"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hKZ-MR-CNb" id="MzY-v0-qQ3">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="177.66666666666666"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="KGZ-L5-dZk" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="hYl-AE-05R"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="thF-lh-t1X" id="GBO-yf-9ts"/>
+                            <outlet property="dataSource" destination="thF-lh-t1X" id="2av-mN-ofs"/>
                             <outlet property="delegate" destination="thF-lh-t1X" id="c9J-Rz-Oe1"/>
                         </connections>
                     </tableView>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l3l-5C-l7T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4145" y="-1132"/>
+            <point key="canvasLocation" x="4144.927536231884" y="-1132.3369565217392"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kMi-KJ-LBL">
@@ -268,14 +271,19 @@
         <!--View Controller-->
         <scene sceneID="7es-ds-MYY">
             <objects>
-                <viewController id="KGZ-L5-dZk" sceneMemberID="viewController">
+                <viewController id="KGZ-L5-dZk" customClass="ViewController" customModule="evento_iOSApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vIV-ma-Npt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="5K4-ab-UWI"/>
                     </view>
-                    <navigationItem key="navigationItem" id="q2w-Yq-bSl"/>
+                    <navigationItem key="navigationItem" id="q2w-Yq-bSl">
+                        <barButtonItem key="leftBarButtonItem" title="Open" id="kLj-XF-gvp"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="open" destination="kLj-XF-gvp" id="cyw-jO-y3C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3GI-oJ-XFy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -626,6 +634,7 @@
         <image name="persona2" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="e2B-Ql-bxS"/>
+        <segue reference="HPd-q9-nBd"/>
+        <segue reference="nsc-KK-Lb4"/>
     </inferredMetricsTieBreakers>
 </document>

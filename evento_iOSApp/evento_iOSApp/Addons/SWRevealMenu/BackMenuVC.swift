@@ -13,22 +13,18 @@ class BackMenuVC: UITableViewController {
     var menuArray = [String]()
     
     override func viewDidLoad() {
-        menuArray = ["Profile", "Events","Clients","Users","About"]
+        menuArray = ["Profile", "Events","Clients","Users","About Evento"]
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return menuArray.count
     }
 
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: IndexPath) -> UITableViewCell{
-        let cell = tableView.dequeueReusableCell(withIdentifier: "menuCell", for: indexPath ) as UITableViewCell
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+        let cell = tableView.dequeueReusableCell(withIdentifier: "menuCell", for: indexPath) as UITableViewCell
         
         cell.textLabel?.text = menuArray[indexPath.row]
         
         return cell
     }
-    
-    
-
-    
 }

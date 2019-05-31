@@ -2,7 +2,7 @@
 //  LoginVC.swift
 //  evento_iOSApp
 //
-//  Created by Elitia Candy on 28/04/2019.
+//  Created by Evento on 28/04/2019.
 //  Copyright © 2019 EventoTeam. All rights reserved.
 //
 

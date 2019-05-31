@@ -12,6 +12,8 @@ class Client: NSObject{
     
     var username: String? = ""
     var city: String? = ""
+    var clientDescription: String? = ""
+    var phoneNumber: String? = ""
     
     
     static func parseClientData(data: Data) -> [Client] {
@@ -27,6 +29,8 @@ class Client: NSObject{
                     let newClient = Client()
                     newClient.username = client["username"] as? String
                     newClient.city = client["city"] as? String
+                    newClient.clientDescription = client["description"] as? String
+                    newClient.phoneNumber = client["phoneNumber"] as? String
                     
                     clientsArray.append(newClient)
                 }

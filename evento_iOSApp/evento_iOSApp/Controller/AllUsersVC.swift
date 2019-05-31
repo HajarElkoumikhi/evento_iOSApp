@@ -30,6 +30,17 @@ class AllUsersVC: UIViewController {
     }
     
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showUserDetailsSegue" {
+            if let indexPath = tableView.indexPathForSelectedRow{
+                let destinationViewController = segue.destination as! UserDetailsVC
+                destinationViewController.selectedUser = userService.usersArray[indexPath.row]
+            }
+        }
+    }
+    
+    
+    
 }
 
 
@@ -51,7 +62,7 @@ extension AllUsersVC: UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "userCell", for: indexPath) as? UserCell {
             cell.configureCell(user: userService.usersArray[indexPath.row])
-            print(userService.usersArray[indexPath.row])
+//            print(userService.usersArray[indexPath.row])
             
             return cell
         }

@@ -13,6 +13,8 @@ class Event: NSObject{
     var title: String? = ""
     var date: String? = ""
     var city: String? = ""
+    var country: String? = ""
+    var eventDescription: String? = ""
     
     
     static func parseEventData(data: Data) -> [Event] {
@@ -29,6 +31,8 @@ class Event: NSObject{
                     newEvent.title = event["title"] as? String
                     newEvent.date = event["date"] as? String
                     newEvent.city = event["city"] as? String
+                    newEvent.country = event["country"] as? String
+                    newEvent.eventDescription = event["description"] as? String
                     
                     eventsArray.append(newEvent)
                 }

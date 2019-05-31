@@ -11,8 +11,14 @@ import UIKit
 
 class UserCell: UITableViewCell {
     
-    @IBOutlet weak var firstNameLabel: UILabel!
-    @IBOutlet weak var lastNameLabel: UILabel!
+//    @IBOutlet weak var usernameLabel: UILabel!
+//    @IBOutlet weak var emailLabel: UILabel!
+    
+    @IBOutlet weak var usernameLabel: UILabel!
+    
+    @IBOutlet weak var emailLabel: UILabel!
+    
+    
     @IBOutlet weak var cityLabel: UILabel!
     
     
@@ -22,8 +28,9 @@ class UserCell: UITableViewCell {
     }
     
     func configureCell(user: User){
-        firstNameLabel.text = user.firstName
-        lastNameLabel.text = user.lastName
+        usernameLabel.text = user.username
+        emailLabel.text = user.email
+        cityLabel.text = user.city
         
     }
     

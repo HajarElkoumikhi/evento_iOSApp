@@ -29,10 +29,22 @@ class AllEventsVC: UIViewController {
         EventService.instance.getAllEvents()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showEventDetailsSegue" {
+            if let indexPath = tableView.indexPathForSelectedRow{
+                let destinationViewController = segue.destination as! EventDetailsVC
+                destinationViewController.selectedEvent = EventService.instance.eventsArray[indexPath.row]
+            }
+        }
+    }
+    
     
 }
 
 
+
+
+// EXTENSIONS
 extension AllEventsVC: EventServiceDelegate {
     
     func eventsLoaded() {
@@ -52,7 +64,7 @@ extension AllEventsVC: UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "eventCell", for: indexPath) as? EventCell {
             cell.configureCell(event: eventService.eventsArray[indexPath.row])
-            print(eventService.eventsArray[indexPath.row])
+//            print(eventService.eventsArray[indexPath.row])
             
             return cell
         }

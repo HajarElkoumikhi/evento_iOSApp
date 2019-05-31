@@ -28,6 +28,15 @@ class AllClientsVC: UIViewController {
         ClientService.instance.getAllClients()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showClientDetailsSegue" {
+            if let indexPath = tableView.indexPathForSelectedRow{
+                let destinationViewController = segue.destination as! ClientDetailsVC
+                destinationViewController.selectedClient = clientService.clientsArray[indexPath.row]
+            }
+        }
+    }
+    
     
 }
 
@@ -51,7 +60,7 @@ extension AllClientsVC: UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "clientCell", for: indexPath) as? ClientCell {
             cell.configureCell(client: clientService.clientsArray[indexPath.row])
-            print(clientService.clientsArray[indexPath.row])
+//            print(clientService.clientsArray[indexPath.row])
             
             
             return cell

@@ -19,6 +19,7 @@
 		4C0D52722277579A001C8F05 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0D52712277579A001C8F05 /* Event.swift */; };
 		4C0D5274227852BF001C8F05 /* ClientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0D5273227852BF001C8F05 /* ClientCell.swift */; };
 		4C199A6A225DE7D500E8D5D0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C199A6C225DE7D500E8D5D0 /* Localizable.strings */; };
+		4C24FD4422A1664B00669C42 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 4C24FD4322A1664B00669C42 /* .gitignore */; };
 		4C2925B5226F09BD00FB279F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2925B4226F09BD00FB279F /* Constants.swift */; };
 		4C59AF6C2274C5F40073C827 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C59AF6B2274C5F40073C827 /* UserCell.swift */; };
 		4C59AF732275C7640073C827 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C59AF712275C7640073C827 /* LoginVC.swift */; };
@@ -68,6 +69,7 @@
 		4C0D5273227852BF001C8F05 /* ClientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientCell.swift; sourceTree = "<group>"; };
 		4C199A6B225DE7D500E8D5D0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4C199A6D225DE7DD00E8D5D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4C24FD4322A1664B00669C42 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		4C2925B4226F09BD00FB279F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4C59AF6B2274C5F40073C827 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		4C59AF712275C7640073C827 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 		4C8E93DA225B532100499C87 = {
 			isa = PBXGroup;
 			children = (
+				4C24FD4322A1664B00669C42 /* .gitignore */,
 				4C8B99922271B73800ED5475 /* Default-568h@2x.png */,
 				4C8E93E5225B532100499C87 /* evento_iOSApp */,
 				4C8E93FD225B532200499C87 /* evento_iOSAppTests */,
@@ -351,6 +354,7 @@
 				4C199A6A225DE7D500E8D5D0 /* Localizable.strings in Resources */,
 				4C8E93F1225B532200499C87 /* Assets.xcassets in Resources */,
 				4C8B99932271B73800ED5475 /* Default-568h@2x.png in Resources */,
+				4C24FD4422A1664B00669C42 /* .gitignore in Resources */,
 				4C8E93EC225B532100499C87 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

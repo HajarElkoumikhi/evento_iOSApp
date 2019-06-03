@@ -13,7 +13,8 @@ import Foundation
 typealias callback = (_ success: Bool ) -> ()
 
 // API endpoint
-let BASE_API_URL = "http://localhost:8080"
+let BASE_API_URL = "http://evento-project.ml:8080"
+
 
 //GET all food trucks URL
 let GET_ALL_USERS_URL = "\(BASE_API_URL)/allUsers"

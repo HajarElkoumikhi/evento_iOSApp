@@ -19,7 +19,10 @@ class EventDetailsVC: UIViewController {
     @IBOutlet weak var eventCountryLabel: UILabel!
     
     
-
+    @IBOutlet weak var city1Label: UILabel!
+    @IBOutlet weak var city2Label: UILabel!
+    @IBOutlet weak var city3Label: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,15 +30,16 @@ class EventDetailsVC: UIViewController {
         eventDescription.text = selectedEvent?.eventDescription
         eventCityLabel.text = selectedEvent?.city
         eventCountryLabel.text = selectedEvent?.country
-//        ceneterMapOnLocation(CLLocation(latitude:selectedEvent!.latitude, longitude: selectedFoodTruck!.longitude))
-
+        
+        city1Label.text = selectedEvent?.cities?[0]["name"]
+        city2Label.text = selectedEvent?.cities?[1]["name"]
+        city3Label.text = selectedEvent?.cities?[2]["name"]
+        
+//        print(selectedEvent?.cities?.count as Any)
+//        for city in selectedEvent?.cities ?? [["No city":"No users"]] {
+//            print(city["name"])
+//        }
 
     }
-
-//    func ceneterMapOnLocation(_ location:CLLocation){
-//        let coordinateRegion = MKCoordinateRegion(center: selectedFoodTruck!.coordinate, latitudinalMeters: 1000,longitudinalMeters: 1000)
-//
-//        foodtruckMap.setRegion(coordinateRegion, animated: true)
-//    }
 
 }

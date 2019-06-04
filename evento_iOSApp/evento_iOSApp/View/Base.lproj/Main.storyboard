@@ -444,6 +444,27 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="city1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Szs-r3-UG8">
+                                        <rect key="frame" x="8" y="424" width="101" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="city2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oI6-ND-DEr">
+                                        <rect key="frame" x="156" y="424" width="101" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="city3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tX-yd-Jpi">
+                                        <rect key="frame" x="305" y="424" width="101" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="aJe-T6-YZ7" firstAttribute="trailing" secondItem="lPI-T6-xkK" secondAttribute="trailingMargin" id="0nM-xa-eYA"/>
@@ -482,6 +503,9 @@
                         <viewLayoutGuide key="safeArea" id="0G9-wf-Ti5"/>
                     </view>
                     <connections>
+                        <outlet property="city1Label" destination="Szs-r3-UG8" id="SBZ-JG-XdF"/>
+                        <outlet property="city2Label" destination="oI6-ND-DEr" id="1ki-ej-Vng"/>
+                        <outlet property="city3Label" destination="2tX-yd-Jpi" id="EZz-zr-J03"/>
                         <outlet property="eventCityLabel" destination="XWp-Aj-pdS" id="YTg-Mt-c4z"/>
                         <outlet property="eventCountryLabel" destination="Nei-sg-PgW" id="nkb-T0-Hnq"/>
                         <outlet property="eventDescription" destination="aJe-T6-YZ7" id="WdS-gP-QsJ"/>

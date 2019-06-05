@@ -2,12 +2,12 @@
 //  evento_iOSAppTests.swift
 //  evento_iOSAppTests
 //
-//  Created by Elitia Candy on 08/04/2019.
+//  Created by EventoTeam on 08/04/2019.
 //  Copyright © 2019 EventoTeam. All rights reserved.
 //
 
 import XCTest
-@testable import evento_iOSApp
+//@testable import evento_iOSApp
 
 class evento_iOSAppTests: XCTestCase {
 

@@ -2,7 +2,7 @@
 //  LoginVC.swift
 //  evento_iOSApp
 //
-//  Created by Evento on 28/04/2019.
+//  Created by EventoTeam on 28/04/2019.
 //  Copyright © 2019 EventoTeam. All rights reserved.
 //
 

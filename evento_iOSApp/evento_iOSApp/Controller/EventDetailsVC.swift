@@ -20,6 +20,7 @@ class EventDetailsVC: UIViewController {
 
 
     @IBOutlet weak var citiesChart: PieChartView!
+    @IBOutlet weak var genderChart: BarChartView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,26 +41,29 @@ class EventDetailsVC: UIViewController {
         citiesChart.chartDescription?.text = "Cities Stats"
         citiesChart.drawHoleEnabled = false
         citiesChart.rotationAngle = 0
-        //pieView.rotationEnabled = false
         citiesChart.isUserInteractionEnabled = false
         
-        //pieView.legend.enabled = false
+        citiesChart.legend.enabled = true
         
         var citiesEntries: [PieChartDataEntry] = Array()
+        
         for city in selectedEvent?.cities ?? [["No city":"No users"]] {
             citiesEntries.append(PieChartDataEntry(value: Double(city["numberOfUsers"]!) as! Double, label: city["name"]))
         }
         
         let dataSet = PieChartDataSet(entries: citiesEntries, label: nil)
+        for counter in selectedEvent?.cities ?? [["No city":"No users"]] {
+            let colorItem:UIColor = .random()
+            dataSet.colors.append(colorItem)
+        }
         
-        let c1:UIColor = .random()
-        let c2:UIColor = .random()
-        let c3:UIColor = .random()
-        
-        dataSet.colors = [c1, c2, c3]
         dataSet.drawValuesEnabled = false
         
         citiesChart.data = PieChartData(dataSet: dataSet)
+    }
+    
+    func setupGenderChart(){
+        
     }
 
 }

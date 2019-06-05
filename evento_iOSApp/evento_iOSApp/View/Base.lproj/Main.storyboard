@@ -308,7 +308,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="party" translatesAutoresizingMaskIntoConstraints="NO" id="bU7-ZS-yo3">
-                                                    <rect key="frame" x="20" y="36" width="100" height="100.00000000000091"/>
+                                                    <rect key="frame" x="20" y="36" width="100" height="100"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="100" id="Ng3-pf-UET"/>
                                                         <constraint firstAttribute="width" constant="100" id="ive-Lk-DZB"/>
@@ -364,7 +364,7 @@
                                 </prototypes>
                             </tableView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="party" translatesAutoresizingMaskIntoConstraints="NO" id="vLe-Hh-eKi">
-                                <rect key="frame" x="0.0" y="64" width="414" height="150.00000000000091"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="MfU-lW-P28"/>
                                     <constraint firstAttribute="height" constant="149.99999999999909" id="bke-uT-WcL"/>
@@ -399,7 +399,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="client" translatesAutoresizingMaskIntoConstraints="NO" id="1UH-hk-coB">
-                                <rect key="frame" x="0.0" y="64" width="414" height="150.00000000000091"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="150"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nb7-Sl-sEA">
                                 <rect key="frame" x="0.0" y="216" width="414" height="520"/>
@@ -413,7 +413,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="client" translatesAutoresizingMaskIntoConstraints="NO" id="mVS-Xd-VU5">
-                                                    <rect key="frame" x="37" y="34.333333333333343" width="88" height="98.000000000000909"/>
+                                                    <rect key="frame" x="37" y="34.333333333333343" width="88" height="98"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="98" id="Cud-VF-F3K"/>
                                                         <constraint firstAttribute="width" constant="88" id="MEs-py-yit"/>
@@ -492,14 +492,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="2500"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="party" translatesAutoresizingMaskIntoConstraints="NO" id="4qE-2r-doX">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="150.00000000000091"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="150" id="9FJ-tC-f4q"/>
                                                     <constraint firstAttribute="width" constant="414" id="iQK-fB-G4Y"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="party" translatesAutoresizingMaskIntoConstraints="NO" id="31k-hY-YBR">
-                                                <rect key="frame" x="25" y="204" width="100" height="100.00000000000091"/>
+                                                <rect key="frame" x="25" y="204" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="CbC-GF-Cgy"/>
                                                     <constraint firstAttribute="height" constant="100" id="yDL-Te-PlE"/>
@@ -539,6 +539,11 @@
                                                 <rect key="frame" x="8" y="593" width="398" height="607"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9PK-Bj-ayX" customClass="BarChartView" customModule="Charts">
+                                                <rect key="frame" x="8" y="1261" width="398" height="607"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -589,6 +594,7 @@
                         <outlet property="eventCountryLabel" destination="34L-kl-F4t" id="ub8-cc-Jj0"/>
                         <outlet property="eventDescription" destination="Jr5-NN-kAk" id="TaK-74-TTA"/>
                         <outlet property="eventTitleLabel" destination="Sfr-HG-hpq" id="fpT-2m-mwo"/>
+                        <outlet property="genderChart" destination="9PK-Bj-ayX" id="Q3K-38-Fpv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SAB-UB-gNQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -610,14 +616,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="2500"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="client" translatesAutoresizingMaskIntoConstraints="NO" id="bAK-Qd-A6f">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="150.00000000000091"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="414" id="P14-NL-Jfu"/>
                                                     <constraint firstAttribute="height" constant="150" id="WQz-Yk-Pux"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="client" translatesAutoresizingMaskIntoConstraints="NO" id="VCe-Ic-Hjm">
-                                                <rect key="frame" x="24" y="186" width="100" height="100.00000000000091"/>
+                                                <rect key="frame" x="24" y="186" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="OLC-jM-UJ6"/>
                                                     <constraint firstAttribute="height" constant="100" id="gZo-gm-VUi"/>

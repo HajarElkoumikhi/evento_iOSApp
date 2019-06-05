@@ -492,14 +492,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="2500"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="party" translatesAutoresizingMaskIntoConstraints="NO" id="4qE-2r-doX">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="150.00000000000091"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="150" id="9FJ-tC-f4q"/>
                                                     <constraint firstAttribute="width" constant="414" id="iQK-fB-G4Y"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="party" translatesAutoresizingMaskIntoConstraints="NO" id="31k-hY-YBR">
-                                                <rect key="frame" x="25" y="204" width="100" height="100.00000000000091"/>
+                                                <rect key="frame" x="25" y="204" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="CbC-GF-Cgy"/>
                                                     <constraint firstAttribute="height" constant="100" id="yDL-Te-PlE"/>

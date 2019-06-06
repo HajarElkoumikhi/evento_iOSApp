@@ -22,8 +22,6 @@ class EventDetailsVC: UIViewController {
     @IBOutlet weak var citiesChart: PieChartView!
     @IBOutlet weak var genderChart: PieChartView!
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -45,49 +43,68 @@ class EventDetailsVC: UIViewController {
         citiesChart.drawHoleEnabled = false
         citiesChart.rotationAngle = 0
         citiesChart.isUserInteractionEnabled = false
-        
         citiesChart.legend.enabled = true
-        
+        citiesChart.animate(xAxisDuration: 3)
         var citiesEntries: [PieChartDataEntry] = Array()
         
-        for city in selectedEvent?.citiesArray ?? [["No city":"No users"]] {
-            citiesEntries.append(PieChartDataEntry(value: Double(city["numberOfUsers"]!) as! Double, label: city["name"]))
+        //No data setup
+        citiesChart.noDataText = "No chart data available."
+        citiesChart.noDataTextColor = UIColor.black
+        if (selectedEvent?.citiesArray!.isEmpty)! {
+            citiesEntries.append(PieChartDataEntry(value: 0, label: "No chart data "))
         }
         
-        let dataSet = PieChartDataSet(entries: citiesEntries, label: nil)
-        for counter in selectedEvent?.citiesArray ?? [["No city":"No users"]] {
-            let colorItem:UIColor = .random()
-            dataSet.colors.append(colorItem)
+        else {
+            for city in selectedEvent?.citiesArray ?? [["No city":"No users"]] {
+                citiesEntries.append(PieChartDataEntry(value: Double(city["numberOfUsers"]!) as! Double, label: city["name"]))
+            }
+            
+            let dataSet = PieChartDataSet(entries: citiesEntries, label: nil)
+            for counter in selectedEvent?.citiesArray ?? [["No city":"No users"]] {
+                let colorItem:UIColor = .random()
+                dataSet.colors.append(colorItem)
+            }
+            dataSet.drawValuesEnabled = true
+            citiesChart.data = PieChartData(dataSet: dataSet)
         }
         
-        dataSet.drawValuesEnabled = true
-        citiesChart.data = PieChartData(dataSet: dataSet)
+        
+        
     }
-    
     
     func setupGenderChart() {
         genderChart.chartDescription?.text = "Cities Stats"
         genderChart.drawHoleEnabled = false
         genderChart.rotationAngle = 0
         genderChart.isUserInteractionEnabled = false
-
-        citiesChart.legend.enabled = true
-
+        genderChart.legend.enabled = true
+        genderChart.animate(xAxisDuration: 3)
         var genderEntries: [PieChartDataEntry] = Array()
-
-        for gender in selectedEvent?.genderArray ?? [["No Data":"No Data"]] {
-            genderEntries.append(PieChartDataEntry(value: Double(gender["numberOfUsers"]!) as! Double, label: gender["name"]))
+        
+        //No data setup
+        genderChart.noDataText = "No chart data available."
+        genderChart.noDataTextColor = UIColor.black
+        if (selectedEvent?.genderArray!.isEmpty)! {
+            genderEntries.append(PieChartDataEntry(value: 0, label: "No chart data "))
         }
 
-        let dataSet = PieChartDataSet(entries: genderEntries, label: nil)
-        for counter in selectedEvent?.genderArray ?? [["No Data":"No Data"]] {
-            let colorItem:UIColor = .random()
-            dataSet.colors.append(colorItem)
+        else {
+            for gender in selectedEvent?.genderArray ?? [["No Data":"No Data"]] {
+                genderEntries.append(PieChartDataEntry(value: Double(gender["numberOfUsers"]!) as! Double, label: gender["name"]))
+            }
+            
+            let dataSet = PieChartDataSet(entries: genderEntries, label: nil)
+            for counter in selectedEvent?.genderArray ?? [["No Data":"No Data"]] {
+                let colorItem:UIColor = .random()
+                dataSet.colors.append(colorItem)
+            }
+            
+            dataSet.drawValuesEnabled = true
+            genderChart.data = PieChartData(dataSet: dataSet)
         }
-
-        dataSet.drawValuesEnabled = true
-        genderChart.data = PieChartData(dataSet: dataSet)
     }
+    
+    
 
 }
 

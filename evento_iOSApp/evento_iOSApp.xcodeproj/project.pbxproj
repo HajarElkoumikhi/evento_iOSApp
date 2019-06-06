@@ -151,13 +151,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		4C0D527D22788D6C001C8F05 /* Addons */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Addons;
-			sourceTree = "<group>";
-		};
 		4C2925B2226F07F200FB279F /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,7 +194,6 @@
 				4C8E9418225B53CF00499C87 /* Controller */,
 				4C8E9417225B53BF00499C87 /* Ressources */,
 				4C2925B2226F07F200FB279F /* Services */,
-				4C0D527D22788D6C001C8F05 /* Addons */,
 				4C8E93ED225B532100499C87 /* evento_iOSApp.xcdatamodeld */,
 				4C8E93F5225B532200499C87 /* Info.plist */,
 			);

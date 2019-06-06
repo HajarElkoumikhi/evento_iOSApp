@@ -62,7 +62,6 @@ extension AllUsersVC: UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "userCell", for: indexPath) as? UserCell {
             cell.configureCell(user: userService.usersArray[indexPath.row])
-//            print(userService.usersArray[indexPath.row])
             
             return cell
         }

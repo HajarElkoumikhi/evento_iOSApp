@@ -20,13 +20,16 @@ class EventDetailsVC: UIViewController {
 
 
     @IBOutlet weak var citiesChart: PieChartView!
-    @IBOutlet weak var genderChart: BarChartView!
+    @IBOutlet weak var genderChart: PieChartView!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         fetchEventDetails()
         setupCitiesChart()
+        setupGenderChart()
         
     }
     
@@ -47,23 +50,43 @@ class EventDetailsVC: UIViewController {
         
         var citiesEntries: [PieChartDataEntry] = Array()
         
-        for city in selectedEvent?.cities ?? [["No city":"No users"]] {
+        for city in selectedEvent?.citiesArray ?? [["No city":"No users"]] {
             citiesEntries.append(PieChartDataEntry(value: Double(city["numberOfUsers"]!) as! Double, label: city["name"]))
         }
         
         let dataSet = PieChartDataSet(entries: citiesEntries, label: nil)
-        for counter in selectedEvent?.cities ?? [["No city":"No users"]] {
+        for counter in selectedEvent?.citiesArray ?? [["No city":"No users"]] {
             let colorItem:UIColor = .random()
             dataSet.colors.append(colorItem)
         }
         
-        dataSet.drawValuesEnabled = false
-        
+        dataSet.drawValuesEnabled = true
         citiesChart.data = PieChartData(dataSet: dataSet)
     }
     
-    func setupGenderChart(){
-        
+    
+    func setupGenderChart() {
+        genderChart.chartDescription?.text = "Cities Stats"
+        genderChart.drawHoleEnabled = false
+        genderChart.rotationAngle = 0
+        genderChart.isUserInteractionEnabled = false
+
+        citiesChart.legend.enabled = true
+
+        var genderEntries: [PieChartDataEntry] = Array()
+
+        for gender in selectedEvent?.genderArray ?? [["No Data":"No Data"]] {
+            genderEntries.append(PieChartDataEntry(value: Double(gender["numberOfUsers"]!) as! Double, label: gender["name"]))
+        }
+
+        let dataSet = PieChartDataSet(entries: genderEntries, label: nil)
+        for counter in selectedEvent?.genderArray ?? [["No Data":"No Data"]] {
+            let colorItem:UIColor = .random()
+            dataSet.colors.append(colorItem)
+        }
+
+        dataSet.drawValuesEnabled = true
+        genderChart.data = PieChartData(dataSet: dataSet)
     }
 
 }
@@ -83,5 +106,4 @@ extension UIColor {
                        alpha: 1.0)
     }
 }
-
 

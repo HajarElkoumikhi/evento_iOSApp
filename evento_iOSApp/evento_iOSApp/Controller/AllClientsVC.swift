@@ -60,8 +60,6 @@ extension AllClientsVC: UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "clientCell", for: indexPath) as? ClientCell {
             cell.configureCell(client: clientService.clientsArray[indexPath.row])
-//            print(clientService.clientsArray[indexPath.row])
-            
             
             return cell
         }

@@ -43,8 +43,6 @@ class AllEventsVC: UIViewController {
 
 
 
-
-// EXTENSIONS
 extension AllEventsVC: EventServiceDelegate {
     
     func eventsLoaded() {
@@ -64,7 +62,6 @@ extension AllEventsVC: UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "eventCell", for: indexPath) as? EventCell {
             cell.configureCell(event: eventService.eventsArray[indexPath.row])
-//            print(eventService.eventsArray[indexPath.row])
             
             return cell
         }

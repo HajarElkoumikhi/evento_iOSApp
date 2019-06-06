@@ -11,21 +11,10 @@ import UIKit
 
 class UserCell: UITableViewCell {
     
-//    @IBOutlet weak var usernameLabel: UILabel!
-//    @IBOutlet weak var emailLabel: UILabel!
-    
     @IBOutlet weak var usernameLabel: UILabel!
-    
     @IBOutlet weak var emailLabel: UILabel!
-    
-    
     @IBOutlet weak var cityLabel: UILabel!
-    
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+
     
     func configureCell(user: User){
         usernameLabel.text = user.username

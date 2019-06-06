@@ -15,16 +15,18 @@ class Event: NSObject{
     var city: String? = ""
     var country: String? = ""
     var eventDescription: String? = ""
-    var cities: [[String:String]]? = [["":""]]
+    var citiesArray: [[String:String]]? = [["":""]]
     var name: String? = ""
     var numberOfUsers: String? = ""
+    var genderArray: [[String:String]]? = [["":""]]
+    var manNumber: String? = ""
+    var womanNumber:String? = ""
     
     
     static func parseEventData(data: Data) -> [Event] {
         var eventsArray = [Event]()
         
         do {
-            //            let jsonResult = try JSONSerialization.jsonObject(with: data, options: [.allowFragments])
             let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
 
             //Parse JSON Data
@@ -36,28 +38,19 @@ class Event: NSObject{
                     newEvent.city = event["city"] as? String
                     newEvent.country = event["country"] as? String
                     newEvent.eventDescription = event["description"] as? String
-
-//                    newEvent.cities = event["cities"] as? [String:String]
-//                    newEvent.cities = event["cities"] as? [[String:String]]
-//                    for city in (newEvent.cities?)! {
-//                        newEvent.name = city["name"] as? String
-//                        newEvent.numberOfUsers = city["numberOfUsers"] as? String
-//                    }
-
-//                    guard (cities?[0]["name"]) != nil else { return }
-//                    var name = newEvent.cities?[0]["name"] as? String
-//                    print(name)
-//                    print(cities)
                     
-                    newEvent.cities = event["cities"] as? [[String:String]]
-                    for city in newEvent.cities ?? [["no city found": "number of users : 0"]]  {
+                    newEvent.citiesArray = event["cities"] as? [[String:String]]
+                    for city in newEvent.citiesArray ?? [["no city found": "number of users : 0"]]  {
                         newEvent.name = city["name"] ?? ""
                         newEvent.numberOfUsers = city["numberOfUsers"] ?? ""
                     }
                     
-
-
-
+                    newEvent.genderArray = event["gender"] as? [[String:String]]
+                    for genderElement in newEvent.genderArray ?? [["no gender found": "number of users : 0"]]  {
+                        newEvent.name = genderElement["name"] ?? ""
+                        newEvent.numberOfUsers = genderElement["numberOfUsers"] ?? ""
+                    }
+                    
                     eventsArray.append(newEvent)
                 }
             }
@@ -65,30 +58,6 @@ class Event: NSObject{
         }catch let err {
             print(err)
         }
-        
-        
-//        do {
-//            let jsonResult = try JSONSerialization.jsonObject(with: data, options:[])
-//
-//            //Parse JSON Data
-//            if let events = jsonResult as? [[String:Any]] {
-//                for event in events {
-//                    let newEvent = Event()
-//                    newEvent.title = event["title"] as? String
-//                    newEvent.eventDescription = event["description"] as? String
-//
-//                    newEvent.cities = event["cities"] as? [[String:String]]
-//                    for city in newEvent.cities ?? [["no city found": "number of users : 0"]]  {
-//                        newEvent.name = city["name"] ?? ""
-//                        newEvent.numberOfUsers = city["numberOfUsers"] ?? ""
-//                    }
-//                    eventsArray.append(newEvent)
-//                }
-//            }
-//
-//        }catch  {
-//            print(error)
-//        }
         
         return eventsArray
     }

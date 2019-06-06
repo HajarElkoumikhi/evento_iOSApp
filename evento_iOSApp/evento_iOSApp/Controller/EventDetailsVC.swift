@@ -17,15 +17,17 @@ class EventDetailsVC: UIViewController {
     @IBOutlet weak var eventDescription: UILabel!
     @IBOutlet weak var eventCityLabel: UILabel!
     @IBOutlet weak var eventCountryLabel: UILabel!
-
-
+    
+    
     @IBOutlet weak var citiesChart: PieChartView!
+    @IBOutlet weak var genderChart: PieChartView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         fetchEventDetails()
         setupCitiesChart()
+        setupGenderChart()
         
     }
     
@@ -40,28 +42,70 @@ class EventDetailsVC: UIViewController {
         citiesChart.chartDescription?.text = "Cities Stats"
         citiesChart.drawHoleEnabled = false
         citiesChart.rotationAngle = 0
-        //pieView.rotationEnabled = false
         citiesChart.isUserInteractionEnabled = false
-        
-        //pieView.legend.enabled = false
-        
+        citiesChart.legend.enabled = true
+        citiesChart.animate(xAxisDuration: 3)
         var citiesEntries: [PieChartDataEntry] = Array()
-        for city in selectedEvent?.cities ?? [["No city":"No users"]] {
-            citiesEntries.append(PieChartDataEntry(value: Double(city["numberOfUsers"]!) as! Double, label: city["name"]))
+        
+        //No data setup
+        citiesChart.noDataText = "No chart data available."
+        citiesChart.noDataTextColor = UIColor.black
+        if (selectedEvent?.citiesArray!.isEmpty)! {
+            citiesEntries.append(PieChartDataEntry(value: 0, label: "No chart data "))
+        }
+            
+        else {
+            for city in selectedEvent?.citiesArray ?? [["No city":"No users"]] {
+                citiesEntries.append(PieChartDataEntry(value: Double(city["numberOfUsers"]!) as! Double, label: city["name"]))
+            }
+            
+            let dataSet = PieChartDataSet(entries: citiesEntries, label: nil)
+            for counter in selectedEvent?.citiesArray ?? [["No city":"No users"]] {
+                let colorItem:UIColor = .random()
+                dataSet.colors.append(colorItem)
+            }
+            dataSet.drawValuesEnabled = true
+            citiesChart.data = PieChartData(dataSet: dataSet)
         }
         
-        let dataSet = PieChartDataSet(entries: citiesEntries, label: nil)
         
-        let c1:UIColor = .random()
-        let c2:UIColor = .random()
-        let c3:UIColor = .random()
         
-        dataSet.colors = [c1, c2, c3]
-        dataSet.drawValuesEnabled = false
-        
-        citiesChart.data = PieChartData(dataSet: dataSet)
     }
-
+    
+    func setupGenderChart() {
+        genderChart.chartDescription?.text = "Cities Stats"
+        genderChart.drawHoleEnabled = false
+        genderChart.rotationAngle = 0
+        genderChart.isUserInteractionEnabled = false
+        genderChart.legend.enabled = true
+        genderChart.animate(xAxisDuration: 3)
+        var genderEntries: [PieChartDataEntry] = Array()
+        
+        //No data setup
+        genderChart.noDataText = "No chart data available."
+        genderChart.noDataTextColor = UIColor.black
+        if (selectedEvent?.genderArray!.isEmpty)! {
+            genderEntries.append(PieChartDataEntry(value: 0, label: "No chart data "))
+        }
+            
+        else {
+            for gender in selectedEvent?.genderArray ?? [["No Data":"No Data"]] {
+                genderEntries.append(PieChartDataEntry(value: Double(gender["numberOfUsers"]!) as! Double, label: gender["name"]))
+            }
+            
+            let dataSet = PieChartDataSet(entries: genderEntries, label: nil)
+            for counter in selectedEvent?.genderArray ?? [["No Data":"No Data"]] {
+                let colorItem:UIColor = .random()
+                dataSet.colors.append(colorItem)
+            }
+            
+            dataSet.drawValuesEnabled = true
+            genderChart.data = PieChartData(dataSet: dataSet)
+        }
+    }
+    
+    
+    
 }
 
 

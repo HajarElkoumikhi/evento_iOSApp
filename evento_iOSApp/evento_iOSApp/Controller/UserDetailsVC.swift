@@ -24,8 +24,6 @@ class UserDetailsVC: UIViewController {
         cityLabel.text = selectedUser?.city
         
         
-        
-        
     }
     
 

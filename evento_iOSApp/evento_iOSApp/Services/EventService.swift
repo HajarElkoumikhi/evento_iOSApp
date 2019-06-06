@@ -39,7 +39,6 @@ class EventService {
                 
                 if let data = data {
                     self.eventsArray = Event.parseEventData(data: data)
-//                    print("Events data loaded")
                     self.delegate?.eventsLoaded()
                 }
             }

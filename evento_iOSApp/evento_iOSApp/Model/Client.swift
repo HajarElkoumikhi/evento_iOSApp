@@ -20,7 +20,6 @@ class Client: NSObject{
         var clientsArray = [Client]()
         
         do {
-            //            let jsonResult = try JSONSerialization.jsonObject(with: data, options: [.allowFragments])
             let jsonResult = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) 
             
             //Parse JSON Data

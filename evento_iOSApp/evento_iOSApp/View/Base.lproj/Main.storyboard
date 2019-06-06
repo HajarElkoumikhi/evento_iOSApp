@@ -540,6 +540,13 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
+
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9PK-Bj-ayX" customClass="PieChartView" customModule="Charts">
+                                                <rect key="frame" x="8" y="1261" width="398" height="607"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -589,6 +596,9 @@
                         <outlet property="eventCountryLabel" destination="34L-kl-F4t" id="ub8-cc-Jj0"/>
                         <outlet property="eventDescription" destination="Jr5-NN-kAk" id="TaK-74-TTA"/>
                         <outlet property="eventTitleLabel" destination="Sfr-HG-hpq" id="fpT-2m-mwo"/>
+
+                        <outlet property="genderChart" destination="9PK-Bj-ayX" id="Q3K-38-Fpv"/>
+
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SAB-UB-gNQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -610,14 +620,20 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="2500"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="client" translatesAutoresizingMaskIntoConstraints="NO" id="bAK-Qd-A6f">
+
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="150.00000000000091"/>
+
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="414" id="P14-NL-Jfu"/>
                                                     <constraint firstAttribute="height" constant="150" id="WQz-Yk-Pux"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="client" translatesAutoresizingMaskIntoConstraints="NO" id="VCe-Ic-Hjm">
-                                                <rect key="frame" x="24" y="186" width="100" height="100.00000000000091"/>
+                                            <rect key="frame" x="24" y="186" width="100" height="100.00000000000091"/>
+
+                                                <rect key="frame" x="24" y="186" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="OLC-jM-UJ6"/>
                                                     <constraint firstAttribute="height" constant="100" id="gZo-gm-VUi"/>

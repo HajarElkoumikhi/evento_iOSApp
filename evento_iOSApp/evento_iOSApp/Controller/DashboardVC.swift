@@ -8,15 +8,21 @@
 
 import Foundation
 import UIKit
+import QuartzCore
 
 class DashboardVC: UIViewController {
     var menuIsHidden = true
+    
+    
+    
+    @IBOutlet weak var eventsButton: UILabel!
     
     @IBOutlet weak var leadingConstraint_outlet: NSLayoutConstraint!
     
     override func viewDidLoad() {
     
         super.viewDidLoad()
+        formatButtons()
         leadingConstraint_outlet.constant = -250
     }
     
@@ -35,6 +41,14 @@ class DashboardVC: UIViewController {
         }
         
         menuIsHidden = !menuIsHidden
+    }
+    
+    
+    func formatButtons(){
+    
+    
+        eventsButton.layer.backgroundColor  = UIColor.red.cgColor
+    eventsButton.layer.cornerRadius = 5
     }
     
 }

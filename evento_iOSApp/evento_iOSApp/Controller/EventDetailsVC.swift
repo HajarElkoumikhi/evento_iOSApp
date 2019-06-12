@@ -16,7 +16,11 @@ class EventDetailsVC: UIViewController {
     @IBOutlet weak var eventTitleLabel: UILabel!
     @IBOutlet weak var eventDescription: UILabel!
     @IBOutlet weak var eventCityLabel: UILabel!
-    @IBOutlet weak var eventCountryLabel: UILabel!
+    @IBOutlet weak var eventDateLabel: UILabel!
+    
+    
+    @IBOutlet weak var citiesChartTitle: UILabel!
+    @IBOutlet weak var genderChartTitle: UILabel!
     
     
     @IBOutlet weak var citiesChart: PieChartView!
@@ -25,6 +29,7 @@ class EventDetailsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupTranslation()
         fetchEventDetails()
         setupCitiesChart()
         setupGenderChart()
@@ -32,10 +37,21 @@ class EventDetailsVC: UIViewController {
     }
     
     func fetchEventDetails(){
+        var city: String = ""
+        var country: String = ""
+        
         eventTitleLabel.text = selectedEvent?.title
         eventDescription.text = selectedEvent?.eventDescription
-        eventCityLabel.text = selectedEvent?.city
-        eventCountryLabel.text = selectedEvent?.country
+        
+        
+//        country = selectedEvent!.country
+        
+        if let selectedEvent =  selectedEvent , let geoCity = selectedEvent.city, let geoCountry = selectedEvent.country {
+            city = geoCity
+            country = geoCountry
+        }
+        eventCityLabel.text = "\(city), \(country)"
+        eventDateLabel.text = selectedEvent?.date
     }
     
     func setupCitiesChart() {
@@ -48,7 +64,7 @@ class EventDetailsVC: UIViewController {
         var citiesEntries: [PieChartDataEntry] = Array()
         
         //No data setup
-        citiesChart.noDataText = "No chart data available."
+        citiesChart.noDataText = NSLocalizedString("NoDataAvailable", comment: "No data available")
         citiesChart.noDataTextColor = UIColor.black
         if (selectedEvent?.citiesArray!.isEmpty)! {
             citiesEntries.append(PieChartDataEntry(value: 0, label: "No chart data "))
@@ -60,8 +76,9 @@ class EventDetailsVC: UIViewController {
             }
             
             let dataSet = PieChartDataSet(entries: citiesEntries, label: nil)
-            for counter in selectedEvent?.citiesArray ?? [["No city":"No users"]] {
-                let colorItem:UIColor = .random()
+//            for counter in selectedEvent?.citiesArray ?? [["No city":"No users"]] {
+            for counter in selectedEvent?.citiesArray ?? [[NSLocalizedString("NoDataAvailable", comment: "No data available"):"No users"]] {
+            let colorItem:UIColor = .random()
                 dataSet.colors.append(colorItem)
             }
             dataSet.drawValuesEnabled = true
@@ -94,7 +111,7 @@ class EventDetailsVC: UIViewController {
             }
             
             let dataSet = PieChartDataSet(entries: genderEntries, label: nil)
-            for counter in selectedEvent?.genderArray ?? [["No Data":"No Data"]] {
+            for _ in selectedEvent?.genderArray ?? [["No Data":"No Data"]] {
                 let colorItem:UIColor = .random()
                 dataSet.colors.append(colorItem)
             }
@@ -105,7 +122,13 @@ class EventDetailsVC: UIViewController {
     }
     
     
+    func setupTranslation(){
+        citiesChartTitle.text = NSLocalizedString("citiesChartTitle", comment: "cities chart title")
+        
+        genderChartTitle.text = NSLocalizedString("genderChartTitle", comment: "gender chart title")
+    }
     
+
 }
 
 

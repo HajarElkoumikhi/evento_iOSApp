@@ -77,6 +77,8 @@
 		4C199A6D225DE7DD00E8D5D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4C24FD4322A1664B00669C42 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		4C2925B4226F09BD00FB279F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4C4B675922AFEF81001A1294 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		4C4B675C22AFEF9D001A1294 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		4C59AF6B2274C5F40073C827 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		4C59AF712275C7640073C827 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		4C6904C82281D17B00361600 /* EventDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsVC.swift; sourceTree = "<group>"; };
@@ -97,8 +99,6 @@
 		4C8E9405225B532300499C87 /* evento_iOSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = evento_iOSAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C8E9409225B532300499C87 /* evento_iOSAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = evento_iOSAppUITests.swift; sourceTree = "<group>"; };
 		4C8E940B225B532300499C87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C8E9469225B9AD200499C87 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
-		4C8E946B225B9B2500499C87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		4C8E946D225B9B2E00499C87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		4C8E94B0225C8ECB00499C87 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		4CE779BD226A6E7700801C23 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -571,8 +571,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				4C8E93EB225B532100499C87 /* Base */,
-				4C8E9469225B9AD200499C87 /* fr */,
-				4C8E946B225B9B2500499C87 /* en */,
+				4C4B675922AFEF81001A1294 /* en */,
+				4C4B675C22AFEF9D001A1294 /* fr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

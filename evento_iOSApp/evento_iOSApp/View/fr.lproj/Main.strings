@@ -1,21 +1,102 @@
 
-//
-//  Main.strings (French)
-//  evento_iOSApp
-//
-//  Created by EventoTeam on 08/04/2019.
-//  Copyright © 2019 EventoTeam. All rights reserved.
-//
+/* Class = "UIButton"; normalTitle = "Profile"; ObjectID = "1wN-tT-C20"; */
+"1wN-tT-C20.normalTitle" = "Profile";
 
+/* Class = "UILabel"; text = "country"; ObjectID = "34L-kl-F4t"; */
+"34L-kl-F4t.text" = "pays";
 
 /* Class = "UITextField"; placeholder = "Password"; ObjectID = "4v7-rb-xJW"; */
 "4v7-rb-xJW.placeholder" = "Mot de passe";
 
-/* Class = "UITextField"; placeholder = "Username"; ObjectID = "akR-s6-CxN"; */
-"akR-s6-CxN.placeholder" = "Nom d'utilisateur";
+/* Class = "UILabel"; text = "emailLabel"; ObjectID = "Dh9-Em-1aZ"; */
+"Dh9-Em-1aZ.text" = "emailLabel";
 
-/* Class = "UILabel"; text = "Mot de passe oublié ?"; ObjectID = "jOc-yJ-ODs"; */
+/* Class = "UIButton"; normalTitle = "Events"; ObjectID = "Eau-v3-s8v"; */
+"Eau-v3-s8v.normalTitle" = "Evènements";
+
+/* Class = "UILabel"; text = "eventDate"; ObjectID = "FS8-3c-xBM"; */
+"FS8-3c-xBM.text" = "eventDate";
+
+/* Class = "UILabel"; text = "event description"; ObjectID = "Jr5-NN-kAk"; */
+"Jr5-NN-kAk.text" = "Description de l'évènement";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "KBz-n5-uNA"; */
+"KBz-n5-uNA.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Stats"; ObjectID = "L0n-ig-52j"; */
+"L0n-ig-52j.text" = "Stats";
+
+/* Class = "UILabel"; text = "client description"; ObjectID = "MJo-KY-MwB"; */
+"MJo-KY-MwB.text" = "Description du client";
+
+/* Class = "UIButton"; normalTitle = "Clients"; ObjectID = "NgN-j9-xbV"; */
+"NgN-j9-xbV.normalTitle" = "Clients";
+
+/* Class = "UILabel"; text = "usernameLabel"; ObjectID = "POI-2X-ThJ"; */
+"POI-2X-ThJ.text" = "usernameLabel";
+
+/* Class = "UILabel"; text = "usernameLabel"; ObjectID = "PfX-Sn-3Wi"; */
+"PfX-Sn-3Wi.text" = "usernameLabel";
+
+/* Class = "UILabel"; text = "cityLabel"; ObjectID = "QSn-0W-wkG"; */
+"QSn-0W-wkG.text" = "cityLabel";
+
+/* Class = "UILabel"; text = "event title"; ObjectID = "Sfr-HG-hpq"; */
+"Sfr-HG-hpq.text" = "event title";
+
+/* Class = "UILabel"; text = "client label"; ObjectID = "V4S-Bu-xbD"; */
+"V4S-Bu-xbD.text" = "client label";
+
+/* Class = "UILabel"; text = "cityLabel"; ObjectID = "Zpg-Eb-3zW"; */
+"Zpg-Eb-3zW.text" = "cityLabel";
+
+/* Class = "UITextField"; placeholder = "Username"; ObjectID = "akR-s6-CxN"; */
+"akR-s6-CxN.placeholder" = "Username";
+
+/* Class = "UIButton"; normalTitle = "About Evento"; ObjectID = "bEh-XC-4E2"; */
+"bEh-XC-4E2.normalTitle" = "A propos";
+
+/* Class = "UILabel"; text = "usernameLabel"; ObjectID = "bcB-ik-zAq"; */
+"bcB-ik-zAq.text" = "usernameLabel";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "end-5l-y8L"; */
+"end-5l-y8L.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "hBU-yF-dML"; */
+"hBU-yF-dML.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "eventTitle"; ObjectID = "ixB-Pk-a8g"; */
+"ixB-Pk-a8g.text" = "eventTitle";
+
+/* Class = "UILabel"; text = "Forgot password ?"; ObjectID = "jOc-yJ-ODs"; */
 "jOc-yJ-ODs.text" = "Mot de passe oublié ?";
 
-/* Class = "UIButton"; normalTitle = "Se connecter"; ObjectID = "y4n-Xd-pIW"; */
-"y4n-Xd-pIW.normalTitle" = "Se connecter";
+/* Class = "UILabel"; text = "client city"; ObjectID = "lHp-0G-TY0"; */
+"lHp-0G-TY0.text" = "client city";
+
+/* Class = "UILabel"; text = "city"; ObjectID = "qIX-FV-E9T"; */
+"qIX-FV-E9T.text" = "ville";
+
+/* Class = "UILabel"; text = "Clients"; ObjectID = "sv4-OA-fjj"; */
+"sv4-OA-fjj.text" = "Clients";
+
+/* Class = "UIBarButtonItem"; title = "Menu"; ObjectID = "t0N-n9-7fF"; */
+"t0N-n9-7fF.title" = "Menu";
+
+/* Class = "UILabel"; text = "eventcity"; ObjectID = "vQm-kz-28a"; */
+"vQm-kz-28a.text" = "eventcity";
+
+/* Class = "UIButton"; normalTitle = "Profile"; ObjectID = "wJq-Qw-hy4"; */
+"wJq-Qw-hy4.normalTitle" = "Profile";
+
+/* Class = "UIButton"; normalTitle = "Members"; ObjectID = "xaT-on-yF9"; */
+"xaT-on-yF9.normalTitle" = "Membres";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "y4n-Xd-pIW"; */
+"y4n-Xd-pIW.normalTitle" = "Login";
+
+/* Class = "UILabel"; text = "cityLabel"; ObjectID = "yFQ-WR-Dzc"; */
+"yFQ-WR-Dzc.text" = "cityLabel";
+
+/* Class = "UILabel"; text = "Events"; ObjectID = "ylc-tC-xod"; */
+"ylc-tC-xod.text" = "Evènements";

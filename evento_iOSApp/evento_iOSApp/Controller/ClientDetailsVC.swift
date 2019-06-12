@@ -19,7 +19,6 @@ class ClientDetailsVC: UIViewController {
     @IBOutlet weak var cityLabel: UILabel!
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -22,7 +22,7 @@ class LoginVC: UIViewController {
 
     
     @IBAction func loginButton(_ sender: Any) {
-        guard let email = emailField.text, emailField.text != "", let password = passwordField.text, passwordField.text != "" else {
+        guard let _ = emailField.text, emailField.text != "", let password = passwordField.text, passwordField.text != "" else {
             self.showAlert(with: "Error", message: "Please enter a correct email and password")
 
             return

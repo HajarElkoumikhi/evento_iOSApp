@@ -15,6 +15,7 @@ class ClientCell: UITableViewCell {
     @IBOutlet weak var cityLabel: UILabel!
     
     
+    
     func configureCell(client: Client){
         usernameLabel.text = client.username
         cityLabel.text = client.city

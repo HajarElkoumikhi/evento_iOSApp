@@ -14,7 +14,7 @@ class DashboardVC: UIViewController {
     var menuIsHidden = true
     
     
-    
+    @IBOutlet weak var menu: UIView!
     @IBOutlet weak var eventsButton: UILabel!
     
     @IBOutlet weak var leadingConstraint_outlet: NSLayoutConstraint!
@@ -22,8 +22,8 @@ class DashboardVC: UIViewController {
     override func viewDidLoad() {
     
         super.viewDidLoad()
-        formatButtons()
-        leadingConstraint_outlet.constant = -250
+        setupMenu()      
+        
     }
     
     
@@ -35,7 +35,7 @@ class DashboardVC: UIViewController {
             UIView.animate(withDuration: 0.3, animations: self.view.layoutIfNeeded)
         }
         else {
-            leadingConstraint_outlet.constant = -250
+            leadingConstraint_outlet.constant = -290
             UIView.animate(withDuration: 0.3, animations: self.view.layoutIfNeeded)
             
         }
@@ -44,11 +44,11 @@ class DashboardVC: UIViewController {
     }
     
     
-    func formatButtons(){
-    
-    
-        eventsButton.layer.backgroundColor  = UIColor.red.cgColor
-    eventsButton.layer.cornerRadius = 5
+    func setupMenu(){
+        leadingConstraint_outlet.constant = -290
+        menu.layer.shadowOpacity = 0.5
+        menu.layer.shadowRadius = 6
     }
+    
     
 }

@@ -19,7 +19,7 @@ class Event: NSObject{
     var name: String? = ""
     var numberOfUsers: String? = ""
     var genderArray: [[String:String]]? = [["":""]]
-    var manNumber: String? = ""
+    var maxNumber: String? = ""
     var womanNumber:String? = ""
     
     

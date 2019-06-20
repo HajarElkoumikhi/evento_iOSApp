@@ -13,6 +13,7 @@ class AllEventsVC: UIViewController {
     
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var eventsLabel: UILabel!
     
     var eventService = EventService.instance
     var authService = AuthService.instance
@@ -27,6 +28,7 @@ class AllEventsVC: UIViewController {
         tableView?.delegate = self
         tableView?.dataSource = self
         EventService.instance.getAllEvents()
+        setupViewController()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -36,6 +38,10 @@ class AllEventsVC: UIViewController {
                 destinationViewController.selectedEvent = EventService.instance.eventsArray[indexPath.row]
             }
         }
+    }
+    
+    func setupViewController(){
+        eventsLabel.text = NSLocalizedString("eventsLabel", comment: "eventsLabel")
     }
     
     

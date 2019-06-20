@@ -1,15 +1,15 @@
 //
-//  evento_iOSAppTests.swift
+//  testAllEventsVC.swift
 //  evento_iOSAppTests
 //
-//  Created by EventoTeam on 08/04/2019.
+//  Created by Elitia Candy on 17/06/2019.
 //  Copyright © 2019 EventoTeam. All rights reserved.
 //
 
 import XCTest
-//@testable import evento_iOSApp
 
-class evento_iOSAppTests: XCTestCase {
+
+class testAllEventsVC: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -24,6 +24,5 @@ class evento_iOSAppTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
-    
 
 }

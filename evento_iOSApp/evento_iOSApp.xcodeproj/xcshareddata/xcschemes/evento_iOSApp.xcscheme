@@ -48,6 +48,16 @@
                ReferencedContainer = "container:evento_iOSApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4C121DB122B7E3CE00C87DC6"
+               BuildableName = "evento_iOSAppTest.xctest"
+               BlueprintName = "evento_iOSAppTest"
+               ReferencedContainer = "container:evento_iOSApp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

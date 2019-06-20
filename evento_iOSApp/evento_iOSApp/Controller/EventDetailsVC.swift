@@ -77,16 +77,14 @@ class EventDetailsVC: UIViewController {
             
             let dataSet = PieChartDataSet(entries: citiesEntries, label: nil)
 //            for counter in selectedEvent?.citiesArray ?? [["No city":"No users"]] {
-            for counter in selectedEvent?.citiesArray ?? [[NSLocalizedString("NoDataAvailable", comment: "No data available"):"No users"]] {
+            for _ in selectedEvent?.citiesArray ?? [[NSLocalizedString("NoDataAvailable", comment: "No data available"):"No users"]] {
             let colorItem:UIColor = .random()
                 dataSet.colors.append(colorItem)
             }
             dataSet.drawValuesEnabled = true
             citiesChart.data = PieChartData(dataSet: dataSet)
         }
-        
-        
-        
+         
     }
     
     func setupGenderChart() {

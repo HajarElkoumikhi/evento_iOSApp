@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1BC1EB67F0A0594662143257 /* Pods_evento_iOSAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A3C327D872E30C1FCEE872B /* Pods_evento_iOSAppTests.framework */; };
 		4C0D525C2276F572001C8F05 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0D525B2276F572001C8F05 /* Client.swift */; };
 		4C0D525E2276F945001C8F05 /* AllUsersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0D525D2276F945001C8F05 /* AllUsersVC.swift */; };
 		4C0D526022771352001C8F05 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0D525F22771352001C8F05 /* DashboardVC.swift */; };
@@ -34,21 +33,12 @@
 		4C8E93EF225B532100499C87 /* evento_iOSApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C8E93ED225B532100499C87 /* evento_iOSApp.xcdatamodeld */; };
 		4C8E93F1225B532200499C87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C8E93F0225B532200499C87 /* Assets.xcassets */; };
 		4C8E93F4225B532200499C87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8E93F2225B532200499C87 /* LaunchScreen.storyboard */; };
-		4C8E93FF225B532300499C87 /* evento_iOSAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8E93FE225B532200499C87 /* evento_iOSAppTests.swift */; };
-		4C8E940A225B532300499C87 /* evento_iOSAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8E9409225B532300499C87 /* evento_iOSAppUITests.swift */; };
 		4CE779BE226A6E7700801C23 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE779BD226A6E7700801C23 /* User.swift */; };
 		535ECD1254A3B657C68B0598 /* Pods_evento_iOSAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 958D44F0FCC09F51993689ED /* Pods_evento_iOSAppUITests.framework */; };
 		C28DF8B8255B8BA4716B9D1C /* Pods_evento_iOSApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B79265D88279E06DA3690F /* Pods_evento_iOSApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4C8E93FB225B532200499C87 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4C8E93DB225B532100499C87 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4C8E93E2225B532100499C87;
-			remoteInfo = evento_iOSApp;
-		};
 		4C8E9406225B532300499C87 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4C8E93DB225B532100499C87 /* Project object */;
@@ -93,12 +83,7 @@
 		4C8E93F0225B532200499C87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C8E93F3225B532200499C87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C8E93F5225B532200499C87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C8E93FA225B532200499C87 /* evento_iOSAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = evento_iOSAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C8E93FE225B532200499C87 /* evento_iOSAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = evento_iOSAppTests.swift; sourceTree = "<group>"; };
-		4C8E9400225B532300499C87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C8E9405225B532300499C87 /* evento_iOSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = evento_iOSAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C8E9409225B532300499C87 /* evento_iOSAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = evento_iOSAppUITests.swift; sourceTree = "<group>"; };
-		4C8E940B225B532300499C87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C8E946D225B9B2E00499C87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		4C8E94B0225C8ECB00499C87 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		4CE779BD226A6E7700801C23 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -116,14 +101,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C28DF8B8255B8BA4716B9D1C /* Pods_evento_iOSApp.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4C8E93F7225B532200499C87 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1BC1EB67F0A0594662143257 /* Pods_evento_iOSAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,8 +145,6 @@
 				4C24FD4322A1664B00669C42 /* .gitignore */,
 				4C8B99922271B73800ED5475 /* Default-568h@2x.png */,
 				4C8E93E5225B532100499C87 /* evento_iOSApp */,
-				4C8E93FD225B532200499C87 /* evento_iOSAppTests */,
-				4C8E9408225B532300499C87 /* evento_iOSAppUITests */,
 				4C8E93E4225B532100499C87 /* Products */,
 				29EA8DE19B98BDDC9DD0C818 /* Pods */,
 				8393A24E3277E77ECE1F7C16 /* Frameworks */,
@@ -180,7 +155,6 @@
 			isa = PBXGroup;
 			children = (
 				4C8E93E3225B532100499C87 /* evento_iOSApp.app */,
-				4C8E93FA225B532200499C87 /* evento_iOSAppTests.xctest */,
 				4C8E9405225B532300499C87 /* evento_iOSAppUITests.xctest */,
 			);
 			name = Products;
@@ -198,24 +172,6 @@
 				4C8E93F5225B532200499C87 /* Info.plist */,
 			);
 			path = evento_iOSApp;
-			sourceTree = "<group>";
-		};
-		4C8E93FD225B532200499C87 /* evento_iOSAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				4C8E93FE225B532200499C87 /* evento_iOSAppTests.swift */,
-				4C8E9400225B532300499C87 /* Info.plist */,
-			);
-			path = evento_iOSAppTests;
-			sourceTree = "<group>";
-		};
-		4C8E9408225B532300499C87 /* evento_iOSAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4C8E9409225B532300499C87 /* evento_iOSAppUITests.swift */,
-				4C8E940B225B532300499C87 /* Info.plist */,
-			);
-			path = evento_iOSAppUITests;
 			sourceTree = "<group>";
 		};
 		4C8E9417225B53BF00499C87 /* Ressources */ = {
@@ -298,25 +254,6 @@
 			productReference = 4C8E93E3225B532100499C87 /* evento_iOSApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4C8E93F9225B532200499C87 /* evento_iOSAppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4C8E9411225B532300499C87 /* Build configuration list for PBXNativeTarget "evento_iOSAppTests" */;
-			buildPhases = (
-				623946BDBE800CC6D2F31C4B /* [CP] Check Pods Manifest.lock */,
-				4C8E93F6225B532200499C87 /* Sources */,
-				4C8E93F7225B532200499C87 /* Frameworks */,
-				4C8E93F8225B532200499C87 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4C8E93FC225B532200499C87 /* PBXTargetDependency */,
-			);
-			name = evento_iOSAppTests;
-			productName = evento_iOSAppTests;
-			productReference = 4C8E93FA225B532200499C87 /* evento_iOSAppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		4C8E9404225B532300499C87 /* evento_iOSAppUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C8E9414225B532300499C87 /* Build configuration list for PBXNativeTarget "evento_iOSAppUITests" */;
@@ -350,10 +287,6 @@
 						CreatedOnToolsVersion = 10.2;
 						LastSwiftMigration = 1020;
 					};
-					4C8E93F9225B532200499C87 = {
-						CreatedOnToolsVersion = 10.2;
-						TestTargetID = 4C8E93E2225B532100499C87;
-					};
 					4C8E9404225B532300499C87 = {
 						CreatedOnToolsVersion = 10.2;
 						TestTargetID = 4C8E93E2225B532100499C87;
@@ -375,7 +308,6 @@
 			projectRoot = "";
 			targets = (
 				4C8E93E2225B532100499C87 /* evento_iOSApp */,
-				4C8E93F9225B532200499C87 /* evento_iOSAppTests */,
 				4C8E9404225B532300499C87 /* evento_iOSAppUITests */,
 			);
 		};
@@ -392,13 +324,6 @@
 				4C8B99932271B73800ED5475 /* Default-568h@2x.png in Resources */,
 				4C24FD4422A1664B00669C42 /* .gitignore in Resources */,
 				4C8E93EC225B532100499C87 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4C8E93F8225B532200499C87 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,28 +370,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-evento_iOSApp-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		623946BDBE800CC6D2F31C4B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-evento_iOSAppTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -526,30 +429,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C8E93F6225B532200499C87 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4C8E93FF225B532300499C87 /* evento_iOSAppTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4C8E9401225B532300499C87 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C8E940A225B532300499C87 /* evento_iOSAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4C8E93FC225B532200499C87 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4C8E93E2225B532100499C87 /* evento_iOSApp */;
-			targetProxy = 4C8E93FB225B532200499C87 /* PBXContainerItemProxy */;
-		};
 		4C8E9407225B532300499C87 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4C8E93E2225B532100499C87 /* evento_iOSApp */;
@@ -715,6 +604,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = V2L397G585;
 				INFOPLIST_FILE = evento_iOSApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -737,6 +627,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = V2L397G585;
 				INFOPLIST_FILE = evento_iOSApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -748,50 +639,6 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "evento_iOSApp/Addons/SWRevealMenu/evento_iOSApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		4C8E9412225B532300499C87 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 77D18BEDF0A69CDD45B1DB23 /* Pods-evento_iOSAppTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V2L397G585;
-				INFOPLIST_FILE = evento_iOSAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "EventoProject.evento-iOSAppTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/evento_iOSApp.app/evento_iOSApp";
-			};
-			name = Debug;
-		};
-		4C8E9413225B532300499C87 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D24A0399F2B67528269DAEDA /* Pods-evento_iOSAppTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V2L397G585;
-				INFOPLIST_FILE = evento_iOSAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "EventoProject.evento-iOSAppTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/evento_iOSApp.app/evento_iOSApp";
 			};
 			name = Release;
 		};
@@ -854,15 +701,6 @@
 			buildConfigurations = (
 				4C8E940F225B532300499C87 /* Debug */,
 				4C8E9410225B532300499C87 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4C8E9411225B532300499C87 /* Build configuration list for PBXNativeTarget "evento_iOSAppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4C8E9412225B532300499C87 /* Debug */,
-				4C8E9413225B532300499C87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

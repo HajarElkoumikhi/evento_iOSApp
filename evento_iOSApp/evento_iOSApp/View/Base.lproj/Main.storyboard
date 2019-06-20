@@ -400,7 +400,7 @@
                                                     </constraints>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="gri-IM-PW9" userLabel="eventTitleStack">
-                                                    <rect key="frame" x="136" y="89" width="257.66666666666674" height="25"/>
+                                                    <rect key="frame" x="136.00000000000003" y="88.666666666666671" width="257.66666666666674" height="25"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="date" translatesAutoresizingMaskIntoConstraints="NO" id="MOy-7W-Sxu">
                                                             <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
@@ -421,7 +421,7 @@
                                                     </constraints>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="eLB-to-V04" userLabel="eventTitleStack">
-                                                    <rect key="frame" x="136" y="144" width="257.66666666666674" height="25"/>
+                                                    <rect key="frame" x="136.00000000000003" y="143.66666666666666" width="257.66666666666674" height="25"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="geoCity" translatesAutoresizingMaskIntoConstraints="NO" id="mFc-in-Sir">
                                                             <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
@@ -442,7 +442,7 @@
                                                     </constraints>
                                                 </stackView>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="party" translatesAutoresizingMaskIntoConstraints="NO" id="bU7-ZS-yo3">
-                                                    <rect key="frame" x="20" y="51" width="100" height="100.00000000000091"/>
+                                                    <rect key="frame" x="20" y="51" width="100" height="100"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="100" id="Ng3-pf-UET"/>
                                                         <constraint firstAttribute="width" constant="100" id="ive-Lk-DZB"/>
@@ -470,7 +470,7 @@
                                 </prototypes>
                             </tableView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="party" translatesAutoresizingMaskIntoConstraints="NO" id="vLe-Hh-eKi">
-                                <rect key="frame" x="0.0" y="64" width="414" height="150.00000000000091"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="MfU-lW-P28"/>
                                     <constraint firstAttribute="height" constant="149.99999999999909" id="bke-uT-WcL"/>
@@ -516,7 +516,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="client" translatesAutoresizingMaskIntoConstraints="NO" id="1UH-hk-coB">
-                                <rect key="frame" x="0.0" y="64" width="414" height="150.00000000000091"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="150"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nb7-Sl-sEA">
                                 <rect key="frame" x="0.0" y="216" width="414" height="520"/>
@@ -572,7 +572,7 @@
                                                     </constraints>
                                                 </stackView>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="client" translatesAutoresizingMaskIntoConstraints="NO" id="mVS-Xd-VU5">
-                                                    <rect key="frame" x="20" y="40.333333333333343" width="88" height="98.000000000000909"/>
+                                                    <rect key="frame" x="20" y="40.333333333333343" width="88" height="98"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="98" id="Cud-VF-F3K"/>
                                                         <constraint firstAttribute="width" constant="88" id="MEs-py-yit"/>
@@ -619,6 +619,7 @@
                         <viewLayoutGuide key="safeArea" id="yhs-ud-GYS"/>
                     </view>
                     <connections>
+                        <outlet property="clientsLabel" destination="8jd-Wr-kRd" id="2JR-7C-vf7"/>
                         <outlet property="tableView" destination="Nb7-Sl-sEA" id="ZJn-u3-BBH"/>
                     </connections>
                 </viewController>
@@ -641,14 +642,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="2500"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="party" translatesAutoresizingMaskIntoConstraints="NO" id="4qE-2r-doX">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="150.00000000000091"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="150" id="9FJ-tC-f4q"/>
                                                     <constraint firstAttribute="width" constant="414" id="iQK-fB-G4Y"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="party" translatesAutoresizingMaskIntoConstraints="NO" id="31k-hY-YBR">
-                                                <rect key="frame" x="25" y="204" width="100" height="100.00000000000091"/>
+                                                <rect key="frame" x="25" y="204" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="CbC-GF-Cgy"/>
                                                     <constraint firstAttribute="height" constant="100" id="yDL-Te-PlE"/>
@@ -827,14 +828,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="700"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="client" translatesAutoresizingMaskIntoConstraints="NO" id="bAK-Qd-A6f">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="150.00000000000091"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="414" id="P14-NL-Jfu"/>
                                                     <constraint firstAttribute="height" constant="150" id="WQz-Yk-Pux"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="client" translatesAutoresizingMaskIntoConstraints="NO" id="VCe-Ic-Hjm">
-                                                <rect key="frame" x="24" y="186" width="100" height="100.00000000000091"/>
+                                                <rect key="frame" x="24" y="186" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="OLC-jM-UJ6"/>
                                                     <constraint firstAttribute="height" constant="100" id="gZo-gm-VUi"/>

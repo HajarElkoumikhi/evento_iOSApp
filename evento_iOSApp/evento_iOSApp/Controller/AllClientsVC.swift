@@ -12,6 +12,7 @@ import UIKit
 class AllClientsVC: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var clientsLabel: UILabel!
     
     var clientService = ClientService.instance
     var authService = AuthService.instance
@@ -77,5 +78,9 @@ extension AllClientsVC: UITableViewDelegate,UITableViewDataSource {
         return 200.0;//Custom row height
     }
     
+    func setupViewController(){
+        clientsLabel
+            .text = NSLocalizedString("clientsLabel", comment: "clientsLabel")
+    }
     
 }
